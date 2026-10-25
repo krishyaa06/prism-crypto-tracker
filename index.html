@@ -1,1 +1,73 @@
+<!--
+  ===================================================================
+  * PROTOCOL:    Prism Protocol Cyber-Ecosystem
+  * COPYRIGHT:   (c) 2026 Prism Protocol. All rights reserved.
+  * LICENSE:     MIT License
+  ===================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism Protocol | Crypto Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="ambient-canvas"></canvas>
 
+    <div class="terminal-shell">
+        <div class="laser-scanner"></div>
+
+        <!-- Header -->
+        <header class="terminal-top">
+            <div class="brand-group">
+                <div class="brand-hex">P</div>
+                <div>
+                    <h1 class="brand-name">PRISM PROTOCOL</h1>
+                    <div class="telemetry">
+                        <span class="blinking-node"></span>
+                        <span class="telemetry-label">FEED // ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+            <button id="btn-sync" class="btn-action">
+                <span class="sync-symbol">↻</span> SYNC
+            </button>
+        </header>
+
+        <!-- Portfolio HUD Card -->
+        <section class="asset-card">
+            <div class="asset-meta">
+                <span class="meta-label">TOTAL ESTIMATED VALUATION</span>
+                <span class="badge-quantum">v2.4 CORE</span>
+            </div>
+            <div class="valuation-number" id="valuation-total">$0.00</div>
+            
+            <div class="input-matrix">
+                <input type="number" id="btc-qty" placeholder="BTC" step="any">
+                <input type="number" id="eth-qty" placeholder="ETH" step="any">
+                <input type="number" id="sol-qty" placeholder="SOL" step="any">
+                <button id="btn-update-holdings" class="btn-prime">COMMIT</button>
+            </div>
+        </section>
+
+        <!-- Search Bar -->
+        <div class="search-wrapper">
+            <span class="search-badge">⌕</span>
+            <input type="text" id="token-filter" placeholder="Filter token ledger...">
+        </div>
+
+        <!-- Token Feed -->
+        <div class="token-container" id="token-feed">
+            <div class="feed-spinner-box">
+                <div class="matrix-loader"></div>
+                <p>INITIALIZING QUANTUM FEED...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
