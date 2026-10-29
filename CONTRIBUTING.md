@@ -1,14 +1,21 @@
 # Contributing to prism-crypto-tracker
 
-Thanks for taking the time to contribute! prism-crypto-tracker is an in-browser tool by [Prism Protocol](https://github.com/krishyaa06).
+Thanks for taking the time to contribute! prism-crypto-tracker is an in-browser tool by [Prism Protocol](https://github.com/krishyaa06) — Prism Protocol | Quantum Tracker — cyberpunk live crypto dashboard with top-25 market feed and private BTC/ETH/SOL portfolio valuation. Vanilla HTML, CSS & JS.
 
 ## Getting started
 
 ```bash
 git clone https://github.com/krishyaa06/prism-crypto-tracker.git
 cd prism-crypto-tracker
-# no build step — open index.html in a browser, or serve the folder:
-npx --yes serve .
+npm start
+```
+
+## Before you open a pull request
+
+Make sure everything passes locally:
+
+```bash
+npm test
 ```
 
 ## Guidelines

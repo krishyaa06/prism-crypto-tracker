@@ -1,0 +1,23 @@
+{
+  "name": "prism-crypto-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prism Protocol | Quantum Tracker — cyberpunk live crypto dashboard with top-25 market feed and private BTC/ETH/SOL portfolio valuation. Vanilla HTML, CSS & JS.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-crypto-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krishyaa06/prism-crypto-tracker/issues"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-crypto-tracker/",
+  "engines": {
+    "node": ">=18"
+  }
+}
